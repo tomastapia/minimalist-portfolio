@@ -1,0 +1,93 @@
+:root {
+    /* COLORES */
+    /* color-scheme: light dark; */
+    --color-principal: #9779E6;
+    --color-principal-2: #735cad;
+    --color-principal-3: #4e3f74;
+    --white100: #FFF;
+    --50: #FAFAFA;
+    --100: #F5F5F5;
+    --200: #EEEEEE;
+    --300: #E0E0E0;
+    --400: #BDBDBD;
+    --500: #9E9E9E;
+    --600: #757575;
+    --700: #616161;
+    --800: #424242;
+    --900: #212121;
+    --black100: #000;
+    /* TIPOGRAFÍAS */
+    --heading-xxlarge: 56px;
+    --heading-xlarge: 48px;
+    --heading-large: 40px;
+    --heading-medium: 32px;
+    --heading-small: 24px;
+    --heading-smaller: 20px;
+    --text-large: 20px;
+    --text-medium: 18px;
+    --text-regular: 16px;
+    --text-small: 14px;
+    --text-tiny: 12px;
+}
+
+
+/* ___________________ GLOBALS ___________________ */
+*, *:before, *:after { box-sizing: inherit; margin: 0; }
+body { font-family: monospace; background-color: var(--300); }
+a { text-decoration: none; }
+
+/* ___________________ LINKS ___________________ */
+.container-links {
+    background-color: var(--400);
+    margin: 0 auto;
+    max-width: 576px;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+}
+.link {
+    color: var(--800);
+}
+
+/* ___________________ PERFIL ___________________ */
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nombre-container {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.nombre{
+
+}
+.fecha{
+    font-weight: 400;
+}
+.icon-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+/* ___________________ EDUCATION ___________________ */
+
+
+/* ___________________ WORK EXPERIENCE ___________________ */
+
+
+/* ___________________ SKILLS ___________________ */
+
+
+/* ___________________ CERTIFICATIONS ___________________ */
+
+
+/* ___________________ FOOTER ___________________ */
