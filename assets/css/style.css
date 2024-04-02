@@ -53,6 +53,30 @@ a { text-decoration: none; }
 }
 
 /* ___________________ PERFIL ___________________ */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    background-color: var(--500);
+    border-radius: ;
+}
+.perfil-container {
+    background-color: var(--400);
+    margin: 0 auto;
+    max-width: 576px;
+}
+.perfil {
+    padding: 20px;
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .contacto {
     display: flex;
     flex-direction: column;
@@ -64,18 +88,59 @@ a { text-decoration: none; }
     gap: 10px;
 }
 .nombre{
-
+    color: var(--800);
 }
 .fecha{
     font-weight: 400;
+    color: var(--800);
+}
+.text-icon {
+    font-size: var(--text-small);
 }
 .icon-container {
     display: flex;
     gap: 10px;
+    color: var(--800);
+}
+.texto-container {
+    padding: 0px 20px 20px 20px;
+}
+.texto {
+    color: var(--800);
+    font-size: var(--text-small);
 }
 
+/* ___________________ SKILLS ___________________ */
 
-
+.skills-container {
+    background-color: var(--400);
+    margin: 0 auto;
+    max-width: 576px;
+}
+.skills-title {
+    font-size: var(--text-regular);
+    padding-left: 20px;
+}
+.brand {
+    font-size: var(--text-small);
+    padding: 20px 20px 0px 20px;
+}
+.icon-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 20px 20px 20px;
+}
+.icon-skill {
+    padding: 5px 10px;
+    border: 1px solid var(--800);
+    transition: .2s ease;
+}
+.icon-skill:hover {
+    padding: 5px 15px;
+    color: var(--400);
+    background-color: var(--800);
+}
 
 
 /* ___________________ EDUCATION ___________________ */
@@ -84,7 +149,6 @@ a { text-decoration: none; }
 /* ___________________ WORK EXPERIENCE ___________________ */
 
 
-/* ___________________ SKILLS ___________________ */
 
 
 /* ___________________ CERTIFICATIONS ___________________ */
