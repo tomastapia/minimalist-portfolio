@@ -33,10 +33,12 @@
 
 /* ___________________ GLOBALS ___________________ */
 *, *:before, *:after { box-sizing: inherit; margin: 0; }
+*::selection { background-color: var(--800); color: var(--300); }
 body { font-family: monospace; background-color: var(--300); }
 a { text-decoration: none; }
 html { scroll-behavior: smooth; }
-.container { margin: 0 auto; max-width: 576px; background-color: var(--300); }
+.container { margin: 0 auto; max-width: 576px; background-color: var(--300);
+    box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.05); }
 .title {
     color: var(--800);
     font-weight: 600;
@@ -47,6 +49,7 @@ html { scroll-behavior: smooth; }
 /* ___________________ LINKS ___________________ */
 .links {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
@@ -61,8 +64,15 @@ html { scroll-behavior: smooth; }
     gap: 20px;
 }
 .id-links {
-    font-weight: 800;
     color: var(--800);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid var(--800);
+    transition: .2s ease;
+}
+.id-links:hover {
+    color: var(--400);
+    background-color: var(--800);
 }
 
 /* ___________________ PERFIL ___________________ */
@@ -72,9 +82,15 @@ html { scroll-behavior: smooth; }
     gap: 20px;
 }
 .foto-perfil {
+    background-image: url(../img/foto-perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
     width: 100px;
     height: 100px;
     background-color: var(--500);
+    box-shadow: -3px 5px 20px 0px rgba(0,0,0,0.3);
 }
 .perfil {
     padding: 20px;
@@ -99,6 +115,7 @@ html { scroll-behavior: smooth; }
     color: var(--800);
 }
 .fecha{
+    font-size: var(--text-small);
     font-weight: 400;
     color: var(--800);
 }
@@ -117,7 +134,9 @@ html { scroll-behavior: smooth; }
     color: var(--800);
     font-size: var(--text-small);
 }
-
+.link-perfil {
+    padding: 20px 20px 0px 20px;
+}
 /* ___________________ SKILLS ___________________ */
 .skills-container {
     display: flex;
@@ -141,12 +160,14 @@ html { scroll-behavior: smooth; }
 .icon-skill {
     color: var(--800);
     padding: 5px 10px;
+    border-radius: 3px;
     border: 1px solid var(--800);
     transition: .2s ease;
 }
 .icon-skill:hover {
     color: var(--400);
     background-color: var(--800);
+    cursor: default;
 }
 
 /* ___________________ WORK EXPERIENCE ___________________ */
@@ -197,16 +218,38 @@ html { scroll-behavior: smooth; }
     padding: 0px 20px;
 }
 
-
-
-
-
-
 /* ___________________ FOOTER ___________________ */
 
-.pad {
-    height: 200px;
+.footer-container {
+    padding: 100px 20px;
 }
 
+.padding {
+    height: 200px;
+}
+@media (max-width: 496px) { 
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .link {
+        color: var(--800);
+    }
+    .scroll-ids {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .id-links {
+        text-align: center;
+        color: var(--800);
+        padding: 10px 100px;
+    }
+    .foto-perfil {
+        display: none;
+    }
+}
 
 /* SCROLLING */
